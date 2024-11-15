@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <i id="back" class="fa-solid fa-arrow-left"></i>
+        <input type="text" id="search" placeholder="Search for a song" />
+        <button id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <i id="music" class="fa-solid fa-music"></i>
+        <i id="aro" class="fa-solid fa-arrow-right"></i>
+      </div>
+      <!-- <h2>Ringtones...</h2> -->
+      <div class="content">
+        <div class="playlist">
+          <ul id="playlist"></ul>
+        </div>
+
+        <div class="musicplay">
+          <div class="music-ig-area"></div>
+          <div class="play-btn">
+            <ul>
+              <li id="backword"><i class="fa-solid fa-backward-step"></i></li>
+              <li id="play"><i class="fa-solid fa-play"></i></li>
+              <li id="forword"><i class="fa-solid fa-forward-step"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

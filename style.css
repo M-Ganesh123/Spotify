@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: rgb(35, 33, 33);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  height: 100vh;
+  width: 100wh;
+  background-color: rgb(35, 33, 33);
+  display: flex;
+  flex-wrap: wrap;
+}
+.container h2 {
+  color: white;
+  font-size: 3.2rem;
+  padding: 1.8% 0 0 13%;
+}
+
+.search-bar {
+  height: 8%;
+  width: 40%;
+  background-color: rgb(35, 33, 33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0 0 2rem;
+}
+.search-bar #back {
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+  display: none;
+}
+.search-bar #aro {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  display: none;
+}
+.search-bar #music {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 5%;
+  display: none;
+}
+#search {
+  height: 84%;
+  width: 85%;
+  background-color: rgb(203, 197, 197);
+  color: black;
+  display: flex;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 1.2rem 0 0 1.2rem;
+  padding-left: 1.2rem;
+}
+#search-btn {
+  height: 84%;
+  width: 15%;
+  background-color: rgb(203, 197, 197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0 1.2rem 1.2rem 0;
+}
+#search-btn i {
+  font-size: 1.5rem;
+}
+#search-btn i:hover {
+  scale: 10px;
+}
+
+.content {
+  height: 80%;
+  width: 100%;
+  background-color: rgb(35, 33, 33);
+  margin-top: 10px;
+  display: flex;
+}
+
+.content .playlist {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(35, 33, 33);
+  overflow: auto;
+}
+.content .playlist::-webkit-scrollbar {
+  display: none;
+}
+
+.playlist ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.playlist ul #song-logo {
+  position: absolute;
+  border-radius: 1.4rem;
+  margin: 0.4rem 0 0 1rem;
+}
+#song-logo {
+  position: absolute;
+  border-radius: 1.4rem;
+  margin: 0.4rem 0 0 1rem;
+  width: 50px;
+}
+
+.playlist li {
+  height: 28%;
+  width: 75%;
+  background-color: rgb(49, 45, 45);
+  padding: 0.8rem 0.8rem 0.8rem 2rem;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 125%;
+  color: aliceblue;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+.playlist li:hover {
+  background-color: #1db954;
+}
+.content .musicplay {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(35, 33, 33);
+}
+.music-ig-area {
+  height: 78%;
+  width: 90%;
+  border-radius: 1.4rem;
+  background-color: rgb(70, 67, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1% 5%;
+}
+.music-ig-area img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.4rem;
+}
+.play-btn {
+  height: 18%;
+  margin-top: 2%;
+  width: 90%;
+  border-radius: 1.4rem;
+  background-color: rgb(70, 67, 63);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1% 5%;
+}
+
+.play-btn ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40%;
+  width: 100%;
+  position: relative;
+}
+.play-btn ul li {
+  font-size: 2.4rem;
+  color: white;
+}
+@media (max-width: 650px) {
+  .container h2 {
+    font-size: 2.2rem;
+  }
+  .content .musicplay {
+    display: none;
+    height: 100%;
+    width: 90%;
+    padding-left: 5%;
+  }
+  .content .playlist {
+    height: 100%;
+    width: 100%;
+    margin: 0 5% 0 5%;
+  }
+  .play-btn {
+    margin: 2rem 5% 2rem 5%;
+  }
+  .playlist li {
+    height: 28%;
+    width: 85%;
+  }
+  .container h2 {
+    font-size: 1.6rem;
+    padding: 5.5% 0 0 6%;
+  }
+
+  .search-bar {
+    height: 8%;
+    width: 80%;
+  }
+
+  #search-btn i {
+    font-size: 1rem;
+  }
+  #search-btn i:hover {
+    scale: 6px;
+  }
+  .playlist ul {
+    padding-left: 0.1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .container h2 {
+    font-size: 1.2rem;
+  }
+
+  .content .musicplay {
+    display: none;
+    height: 88%;
+    width: 90%;
+    padding-left: 5%;
+  }
+  .content .playlist {
+    height: 100%;
+    width: 100%;
+    margin: 0 5% 0 5%;
+  }
+  .play-btn {
+    margin: 2.4rem 5% 2rem 5%;
+  }
+  .playlist li {
+    height: 28%;
+    width: 85%;
+  }
+  .container h2 {
+    font-size: 1.6rem;
+    padding: 5.5% 0 0 6%;
+  }
+
+  .search-bar {
+    height: 9%;
+    width: 80%;
+    padding: 1.2rem 0 0 2.2rem;
+  }
+  .search-bar #music {
+    margin-left: 5%;
+    font-size: 1rem;
+  }
+  .search-bar #aro {
+    font-size: 1.1rem;
+  }
+
+  .music-ig-area {
+    height: 70%;
+    width: 90%;
+  }
+
+  #search-btn i {
+    font-size: 1.5rem;
+  }
+  #search-btn i:hover {
+    scale: 8px;
+  }
+}
